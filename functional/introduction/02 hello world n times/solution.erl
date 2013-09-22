@@ -3,9 +3,9 @@
 
 printn(N) when N =:= 0 -> "ok";
 printn(N) when N > 0 -> 
-    io:format("Hello World~n"),
-    printn(N-1).
+	io:format("Hello World~n"),
+	printn(N-1).
 
 main() ->
-    {ok, [N]} = io:fread("", "~d"),
-    printn(N).
+	{ok, [N]} = io:fread("", "~d"),
+	printn(N).
